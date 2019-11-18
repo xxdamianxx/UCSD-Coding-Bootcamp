@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question Game!</h1>
+    <h2>Score  <span id="score"></span></h2>
+    <h2 id="quiz"></h2>
+
+    <script>
+        var score=0;
+        var curr=0;
+
+        var scoreText = document.getElementById("score");
+        var quizText = document.getElementById("quiz");
+
+        function report() {
+    
+            scoreText.textContent = score;
+            quizText.textContent = questions[curr].q;
+            
+        }
+
+        var questions = [
+        {q: "There are 365 days in one year.", a: "t"},
+        {q: "That world is flat.", a: "f"},
+        {q: "The sky is blue.", a: "t"} 
+        ];
+
+        report();
+
+        document.onkeyup = function(event){
+            var userKey = event.key;
+            
+            if ( questions[curr].a === userKey) {
+                alert("correct");
+                score++;
+            }
+            else {
+                alert("incorrect");
+            }
+            
+            curr++;
+            report();
+        }
+        
+           
+    </script>
+</body>
+</html>

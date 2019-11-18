@@ -1,0 +1,9 @@
+.giphy-image {
+    border: 3px solid darkgray;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.celeb-btn {
+    margin: 5px;
+}

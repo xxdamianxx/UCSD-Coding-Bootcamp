@@ -1,0 +1,28 @@
+{
+  "name": "mysql-extended-session-may-2019",
+  "version": "1.0.0",
+  "description": "A MySQL extended session for UCSD Extension",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travo100/mysql-extended-session-may-2019.git"
+  },
+  "keywords": [
+    "mysql",
+    "node",
+    "data"
+  ],
+  "author": "Travis Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Travo100/mysql-extended-session-may-2019/issues"
+  },
+  "homepage": "https://github.com/Travo100/mysql-extended-session-may-2019#readme",
+  "dependencies": {
+    "inquirer": "^6.4.1",
+    "mysql": "^2.17.1"
+  }
+}

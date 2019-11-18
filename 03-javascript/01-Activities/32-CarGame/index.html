@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <script>
+
+      var car = {
+
+        document.onkeyup = function(event) {
+
+            var userPressed = event.key;
+            console.log(userPressed);
+
+            if (userPressed === "h") {
+                car.honk();
+            }
+            else if (userPressed === "d") {
+                car.driveToWork();
+            }
+            else if (userPressed === "w") {
+                car.driveAroundWorld();
+            }
+            
+
+        }
+      };
+    </script>
+    
+  </body>
+</html>
